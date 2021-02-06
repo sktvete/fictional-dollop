@@ -14,9 +14,8 @@ def board(): #Print board
     -----
     {seven}|{eight}|{nine}
     """)
- ,
 
-one = "x"
+one = " "
 two = " "
 three = " "
 four = " "
@@ -25,6 +24,20 @@ six = " "
 seven = " "
 eight = " "
 nine = " "
+
+#XorOisTaken
+
+inp = input("which square? (1-9)")
+if inp == "1":
+    one = "X"
+elif inp == "2":
+    two = "X"
+elif inp == "3":
+    three = "X"
+elif inp == "4":
+    four = "X"
+
+
 
 
 board()
