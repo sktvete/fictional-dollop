@@ -14,7 +14,7 @@ def board(): #Print board
     -----
     {seven}|{eight}|{nine}
     """)
-
+ ,
 
 one = "x"
 two = " "
