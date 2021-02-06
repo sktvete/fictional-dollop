@@ -5,33 +5,27 @@
 import time
 import random
 
-def board():
-    print("\n")
-    print("\t     |     |")
-    print("\t ", one, "|     |    ")
-    print('\t_____|_____|_____')
-
-    print("\t     |     |")
-    print("\t     |     |   ")
-    print('\t_____|_____|_____')
-
-    print("\t     |     |")
-
-    print("\t     |     |   ")
-    print("\t     |     |")
-    print("\n")
+def board(): #Print board
+    print\
+    (f"""  
+    {one}|{two}|{three}
+    -----
+    {four}|{five}|{six}
+    -----
+    {seven}|{eight}|{nine}
+    """)
 
 
-one = "  "
-two = "  "
-three = "  "
-four = "  "
-five = "  "
-six = "  "
-seven = "  "
-eight = "  "
-nine = "  "
-ten = "  "
+one = "x"
+two = " "
+three = " "
+four = " "
+five = " "
+six = " "
+seven = " "
+eight = " "
+nine = " "
+
 
 board()
 
