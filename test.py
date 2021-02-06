@@ -10,13 +10,13 @@ inp = random.randint(1, 100) # max(lstLower)
 print("Your number is", inp) # min(lstLower)
 
 while True:
-
-    guess = ((min(lstLower) + max(lstHigher))/2)
-
     time.sleep(1)
+    print(guess)
     if guess < inp:
+        guess = ((min(lstLower) + max(lstHigher)) / 2)
         lstHigher.append(guess)
-    elif guess < inp:
+    elif guess > inp:
+        guess = ((min(lstLower) + max(lstHigher)) / 2)
         lstLower.append(guess)
 
 

@@ -1,12 +1,40 @@
+
+
+#TictacToe
+
 import time
+import random
 
-lstLower = [100]
-lstHigher = [0]
+def board():
+    print("\n")
+    print("\t     |     |")
+    print("\t ", one, "|     |    ")
+    print('\t_____|_____|_____')
 
-while True:
+    print("\t     |     |")
+    print("\t     |     |   ")
+    print('\t_____|_____|_____')
+
+    print("\t     |     |")
+
+    print("\t     |     |   ")
+    print("\t     |     |")
+    print("\n")
+
+
+one = "  "
+two = "  "
+three = "  "
+four = "  "
+five = "  "
+six = "  "
+seven = "  "
+eight = "  "
+nine = "  "
+ten = "  "
+
+board()
 
 
 
-    print((min(lstLower) + max(lstHigher))/2)
 
-    print(guess)
