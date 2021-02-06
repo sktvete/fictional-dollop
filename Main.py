@@ -11,46 +11,46 @@ def blackjack():
 
 
     kort = random.randint(1, 11)
-    print("Du fikk", kort)
+    print("You got", kort)
     total += kort
 
     kort = random.randint(1, 11)
-    print("Du fikk", kort)
+    print("You got", kort)
     total += kort
 
     print("Total =", total)
 
     while total < 21:
-        inp = input("Vil du trekke nytt? y/n ")
+        inp = input("Do you want a new card? y/n ")
         if inp == "n":
-            print("\n"*4 + "Dealer sin tur")
+            print("\n"*4 + "Dealers turn")
             break
         kort = random.randint(1, 11)
-        print("Du fikk", kort)
+        print("You got", kort)
         total += kort
         print("Total =", total)
 
     if total > 21:
-        print("Du tapte")
+        print("You lost")
 
     else:
         while dealertotal < 17: #DEALER
             time.sleep(1)
             kort = random.randint(1, 10)
-            print("Dealer trakk", kort)
+            print("Dealer got", kort)
             dealertotal += kort
 
         if dealertotal > 21 or total > dealertotal:
-            print("Dealer endte opp med", dealertotal)
-            print("Du vant!")
+            print("Dealer ended up with", dealertotal)
+            print("You won")
             return "vant"
         elif total == dealertotal:
-            print("Dealer endte opp med", dealertotal)
-            print("Likt")
+            print("Dealer ended up with", dealertotal)
+            print("Equal")
             return "likt"
         else:
-            print("Dealer endte opp med", dealertotal)
-            print("Du tapte:(")
+            print("Dealer ended up with", dealertotal)
+            print("You lost:(")
     return "tapt"
 
 
@@ -62,6 +62,7 @@ playedbefore = False
 while True:
     again = input("Do you want to play a game of Blackjack? y/n ")
     if again == "y":
+        print("You have",penger,"dollars left")
         bet = int(input("How much do you want to bet? "))
         while penger-bet < 0:
             bet = int(input("How much do you want to bet? "))
@@ -72,7 +73,7 @@ while True:
             penger += bet * 2
         elif resultat == "likt":
             penger += bet
-        print("Du har", penger)
+        print("You have", penger, "dollars left")
         time.sleep(1)
         print("\n" * 2)
     elif again == "n":

@@ -1,2 +1,0 @@
-# fictional-dollop
-python course
