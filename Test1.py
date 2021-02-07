@@ -5,6 +5,8 @@
 import time
 import random
 
+
+
 def board(): #Print board
     print\
     (f"""  
@@ -36,8 +38,16 @@ elif inp == "3":
     three = "X"
 elif inp == "4":
     four = "X"
-
-
+elif inp == "5":
+    five = "X"
+elif inp == "6":
+    six = "X"
+elif inp == "7":
+    seven = "X"
+elif inp == "8":
+    eight = "X"
+elif inp == "9":
+    nine = "X"
 
 
 board()
