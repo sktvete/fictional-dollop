@@ -90,16 +90,31 @@ while game == True:
             board()
 
         print("You made your move")
-        if "1" and "2" and "3" in lst1:
+        if ("1" and "2" and "3") in lst1:
             print("Player X won!")
-        elif "4" and "5" and "6":
+            print("123")
+            print(lst1)
+        elif "4" and "5" and "6" in lst1:
             print("Player X won!")
-        elif "7" and "8" and "9":
+            print("456")
+        elif "7" and "8" and "9" in lst1:
+            print("789")
             print("Player X won!")
-        elif "1"
-            break
+        elif "1" and "4" and "7" in lst1:
+            print("147")
+            print("Player X won!")
+        elif "2" and "5" and "8" in lst1:
+            print("Player X won!")
+            print("258")
+        elif "3" and "6" and "9" in lst1:
+            print("Player X won!")
+        elif "1" and "5" and "9" in lst1:
+            print("Player X won!")
+        elif "3" and "5" and "7" in lst1:
+            print("Player X won!")
 
-    moved = False
+
+    moved = False  #winning numbers 123 456 789 147 258 369 159 357
 
     if one != " " and two != " " and three != " " and four != " " and five != " " and six != " " and seven != " " and eight != " ":
         print("Equal")
@@ -157,11 +172,26 @@ while game == True:
             print(inp, "Not possible")
             board()
 
-
+        if "1" and "2" and "3" in lst2:
+            print("Player O won!")
+        elif "4" and "5" and "6" in lst2:
+            print("Player O won!")
+        elif "7" and "8" and "9" in lst2:
+            print("Player O won!")
+        elif "1" and "4" and "7" in lst2:
+            print("Player O won!")
+        elif "2" and "5" and "8" in lst2:
+            print("Player O won!")
+        elif "3" and "6" and "9" in lst2:
+            print("Player O won!")
+        elif "1" and "5" and "9" in lst2:
+            print("Player O won!")
+        elif "3" and "5" and "7" in lst2:
+            print("Player O won!")
 
     print("move is made")
 
-#winning numbers 123 456 789 147 258 369 159 357
+
 
 
 
