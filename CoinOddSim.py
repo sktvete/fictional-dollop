@@ -38,4 +38,5 @@ while True:
         print("throwes =", whiles)
         print("heads", head)
         print("doubleHeads", doubleHeads)
+        print(str(doubleHeads/whiles*100) + "%")
         break
